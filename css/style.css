@@ -61,7 +61,6 @@ button, button:active, button:focus {
 
 /* ad */
 #ad {
-display:none;
     z-index:99999;
     position:fixed;
     width:100%;
