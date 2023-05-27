@@ -532,23 +532,23 @@ button, button:active, button:focus {
 .bn_gallery>li:nth-child(3) { margin-left:-5px; }
 
 .bn_gallery>li:nth-child(1) .bn_list>li:nth-child(1) .bn_inner {
-    background-image: url('./images/bn_1.jpg');
+    background-image: url('images/bn_1.jpg');
 }
 
 .bn_gallery>li:nth-child(1) .bn_list>li:nth-child(2) .bn_inner {
-    background-image: url('./images/bn_2.jpg');
+    background-image: url('images/bn_2.jpg');
 }
 
 .bn_gallery>li:nth-child(2) .bn_list>li:nth-child(1) .bn_inner {
-    background-image: url('./images/bn_3.jpg');
+    background-image: url('images/bn_3.jpg');
 }
 
 .bn_gallery>li:nth-child(2) .bn_list>li:nth-child(2) .bn_inner {
-    background-image: url('./images/bn_4.jpg');
+    background-image: url('images/bn_4.jpg');
 }
 
 .bn_gallery>li:nth-child(3) .bn_list>li:nth-child(1) .bn_inner {
-    background-image: url('./images/bn_5.jpg');
+    background-image: url('images/bn_5.jpg');
 }
 
 .bn_gallery>li:nth-child(3) .bn_list>li:nth-child(2) .bn_inner {
