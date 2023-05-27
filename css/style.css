@@ -32,7 +32,7 @@ a, a:link, a:visited {
 
 img { image-rendering: auto; }
 
-* { zoom:0.9s; }
+* { zoom:0.9; }
 
 /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
 *::-webkit-scrollbar {
