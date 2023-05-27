@@ -13,8 +13,9 @@
     to { transform: rotate( 360deg ); }
 }
 
-
 html { zoom:0.8; }
+
+
 
 
 /* reset */
@@ -737,7 +738,7 @@ margin-top:200px;
 }
 
 .intro_logo { text-align:center; }
-.intro_logo img { width:230px; }
+.intro_logo img { width:230px;  }
 .intro_h1 { margin-top:35px; text-align:center; }
 .intro_h1 img { width:250px; }
 
@@ -1131,9 +1132,7 @@ margin-top:200px;
 .bakery_img li:nth-child(8) img { width:250px; margin-top:50px; margin-left:25px; }
 .bakery_img li:nth-child(9) img { width:240px; margin-top:-75px; }
 .bakery_img li:nth-child(10) img { width:310px; margin-top:-75px; margin-left:-50px; }
-.bakery_img li:nth-child(11) img { width:310px; margin-top:-25px; margin-left:50px; 
-
-.bakery_img li:hover .img_clone { clip-path: circle(100% at 50% 50%); }
+.bakery_img li:nth-child(11) img { width:310px; margin-top:-25px; margin-left:50px; }
 
 
 
