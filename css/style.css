@@ -1119,7 +1119,7 @@ margin-top:200px;
     transition:0.5s;
 }
 
-.bakery_img img { vertical-align:middle; width:250px; filter: grayscale(1); transition:0.8s; }
+.bakery_img img { vertical-align:middle; width:250px; }
 .bakery_img li:hover img { filter: grayscale(0); transition:0.8s; }
 .bakery_img li:first-child img { width:290px; margin-top:-150px; }
 .bakery_img li:nth-child(2) img { margin-left:50px; }
@@ -1131,17 +1131,7 @@ margin-top:200px;
 .bakery_img li:nth-child(8) img { width:250px; margin-top:50px; margin-left:25px; }
 .bakery_img li:nth-child(9) img { width:240px; margin-top:-75px; }
 .bakery_img li:nth-child(10) img { width:310px; margin-top:-75px; margin-left:-50px; }
-.bakery_img li:nth-child(11) img { width:310px; margin-top:-25px; margin-left:50px; }
-
-.bakery_img li .img_clone { position: absolute; z-index:2; filter:none; top:0; left:0; clip-path: circle(0% at 50% 50%); }
-.bakery_img li:first-child .img_clone { margin-left:5px; }
-.bakery_img li:nth-child(3) .img_clone  { margin-left:5px; }
-.bakery_img li:nth-child(4) .img_clone  { margin-left:0px; }
-.bakery_img li:nth-child(6) .img_clone  { margin-left:13px; }
-.bakery_img li:nth-child(7) .img_clone  { margin-left:32px; }
-.bakery_img li:nth-child(8) .img_clone  { margin-left:38px; }
-.bakery_img li:nth-child(9) .img_clone  { margin-left:30px; }
-.bakery_img li:nth-child(10) .img_clone  { margin-left:-30px; }
+.bakery_img li:nth-child(11) img { width:310px; margin-top:-25px; margin-left:50px; 
 
 .bakery_img li:hover .img_clone { clip-path: circle(100% at 50% 50%); }
 
