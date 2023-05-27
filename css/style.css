@@ -14,7 +14,7 @@
 }
 
 
-
+html { zoom:0.8; }
 
 
 /* reset */
@@ -54,13 +54,14 @@ button, button:active, button:focus {
 #black { width:100%; height:160px; }
 #break { width:100%; height:140px; }
 #breathe { width:100%; height:140px; }
-#bbb { margin:0 auto; width:1300px; height:140px; text-align:center; }
+#bbb { margin:0 auto; width:1300px; height:100px; text-align:center; }
 
 
 
 
 /* ad */
 #ad {
+display:none;
     z-index:99999;
     position:fixed;
     width:100%;
@@ -299,14 +300,15 @@ button, button:active, button:focus {
     height: 100vh;
 }
 
-.main video {
+.main iframe {
     width:100%;
+    height: 100vh;
     margin-top:140px;
     filter:grayscale(1);
     transition:0.5s;
 }
 
-.main video:hover { filter:grayscale(0); transition:0.5s; }
+.main iframe:hover { filter:grayscale(0); transition:0.5s; }
 
 
 
@@ -316,6 +318,7 @@ button, button:active, button:focus {
 #container {
     z-index:1;
     position:relative;
+margin-top:200px;
     width:100%;
     height:1300px;
 }
@@ -558,7 +561,7 @@ button, button:active, button:focus {
 
 /* bn inner */
 .a_title {
-    margin-top: 104.5px;
+    margin-top: 89.5px;
     margin-left: 42.75px;
     padding-left: 4.75px;
     color: #AF9889;
@@ -1010,7 +1013,7 @@ button, button:active, button:focus {
 /* beverage */
 .beverage {
     margin:250px auto 0;
-    width:1300px;
+    width:100%;
     overflow:hidden;
 }
 
@@ -1241,7 +1244,7 @@ button, button:active, button:focus {
     font-family:'Pretendard';
     font-size:16px;
     line-height:21px;
-    font-weight:100;
+    font-weight:300;
 }
 
 .box_a p { transform:translateY(-50%); }
@@ -1296,7 +1299,7 @@ button, button:active, button:focus {
 .more_b p, .more_d p { left:40px; }
 .more_b i, .more_d i { right:40px; }
 
-.more_e { margin-top:10px; margin-left:8px; }
+.more_e { margin-top:5px; margin-left:8px; }
 .more_e a {
     color:#999;
     font-family:'Pretendard';
