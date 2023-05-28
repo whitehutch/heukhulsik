@@ -103,6 +103,17 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            $(".map").on("click", function () {
+                $("#map").fadeIn(1000).css("display", "flex");
+            });
+
+            $("#map").on("click", ".close", function () {
+                $("#map").fadeOut(1000);
+            });
+        });
+    </script>
 
 </head>
 
