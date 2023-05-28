@@ -535,7 +535,7 @@ margin-top:200px;
 .bn_gallery>li:nth-child(3) { margin-left:-5px; }
 
 .bn_gallery>li:nth-child(1) .bn_list>li:nth-child(1) .bn_inner {
-    background-image: url('../images/bn_1.jpg');
+    background-image: url('https://thumbs2.imgbox.com/29/10/WyJ6rRuo_t.jpg');
 }
 
 .bn_gallery>li:nth-child(1) .bn_list>li:nth-child(2) .bn_inner {
