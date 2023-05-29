@@ -59,6 +59,7 @@ button, button:active, button:focus {
 
 body {
     overflow-y: scroll;
+    zoom:0.8;
 }
 
 
