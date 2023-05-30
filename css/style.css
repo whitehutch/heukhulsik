@@ -974,8 +974,8 @@ body {
 /* menu intro */
 .m_intro {
     margin:140px auto 0;
-    width:500px;
-    height:500px;
+    width:480px;
+    height:480px;
     border:2px solid white;
     border-radius:500px;
     text-align:center;
