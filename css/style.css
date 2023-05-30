@@ -192,7 +192,8 @@ body {
     z-index:9999;
     position: fixed;
     display: none;
-    top: 1400px;
+    margin-top:140px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
