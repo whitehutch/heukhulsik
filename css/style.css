@@ -69,7 +69,7 @@ body {
 /* ad */
 #ad {
     display:none;
-    z-index:99999;
+    z-index:999999;
     position:fixed;
     width:100%;
     top:132.5px;
@@ -157,7 +157,7 @@ body {
 
 /* header */
 #header {
-    z-index:9999;
+    z-index:99999;
     position: fixed;
     width:100%;
     height:100px;
@@ -190,7 +190,7 @@ body {
 
 /* map */
 #map {
-    z-index:999999;
+    z-index:9999;
     position: fixed;
     display: none;
     top: 140px;
