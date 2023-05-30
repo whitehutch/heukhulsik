@@ -784,6 +784,20 @@
         closeButton.addEventListener("click", hideMap);
       });
     </script>
+    <script>
+      var mapButton = document.querySelector(".map");
+      mapButton.addEventListener("click", function(event) {
+        // 현재 스크롤 위치 저장
+        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        showMap(); // #map 표시
+
+        // 등장 후에 스크롤 위치 복원
+        setTimeout(function() {
+          window.scrollTo(0, scrollPosition);
+        }, 10);
+      });
+    </script>
 
 <!-- Code injected by live-server -->
 <script>
