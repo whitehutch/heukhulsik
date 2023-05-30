@@ -128,7 +128,7 @@
                     window.location.href = linkLocation;
                 }
             });
-        </script>
+    </script>
 
     <style>
 
@@ -159,6 +159,43 @@
         .loading_text img { width:240px; animation: rotate_image 10s linear infinite; }
 
     </style>
+    <script>
+        $(function ($) {
+            $(".footer_map .tel a").click(function (event) {
+                event.preventDefault();
+                var phoneNumber = $(this).text();
+                // 복사 로직 구현
+                copyToClipboard(phoneNumber);
+            });
+
+            function copyToClipboard(text) {
+                var tempInput = $("<input>");
+                $("body").append(tempInput);
+                tempInput.val(text).select();
+                document.execCommand("copy");
+                tempInput.remove();
+            }
+        });
+  </script>
+  <script>
+    $(function ($) {
+        $(".footer_map .adress a").click(function (event) {
+            event.preventDefault();
+            var address = "부산광역시 부산진구 서전로 37번길 18 2층";
+            // 복사 로직 구현
+            copyToClipboard(address);
+        });
+
+        // 이하 함수들은 이전에 설명한 코드와 동일합니다.
+        function copyToClipboard(text) {
+            var tempInput = $("<input>");
+            $("body").append(tempInput);
+            tempInput.val(text).select();
+            document.execCommand("copy");
+            tempInput.remove();
+        }
+    });
+    </script>
 
 </head>
 
@@ -762,8 +799,11 @@
                 <div class="footer_map">
                     <ul>
                         <li class="adress">
-                            Seojeon ro 37beon gil 18 2F<br>
-                            Busanjin gu Busan SouthKorea
+                            <a href="#" id="exclude-link">
+                                Seojeon ro 37beon gil 18 2F<br>
+                                Busanjin gu Busan SouthKorea
+                            </a>
+                            
                         </li>
                         <li class="tel">
                             <a href="#" id="exclude-link"><span>+82</span> 51 133 0361</a>
@@ -791,6 +831,7 @@
                     </div>
                     <div class="copyright">© heukhulsik. all right reserved.</div>
                 </div>
+            </div>
             </div>
         </div>
 

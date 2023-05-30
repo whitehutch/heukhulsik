@@ -61,6 +61,44 @@ body {
     overflow-y: scroll;
 }
 
+.popup {
+    z-index:9999;
+    position: fixed;
+    display: none;
+    margin-top:140px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%; 
+    transition: opacity 1s ease-in-out;
+
+    -webkit-box-align: center; 
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; /* 수직 정렬 */
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center; 
+    -ms-flex-pack: center; 
+    justify-content: center; /* 수평 정렬 */
+}
+
+.popup_wrap {
+    position:relative;
+    box-sizing:border-box;
+    margin-top:-140px;
+    width:725px;
+    height:550px;
+    color:white;
+    background-color:black;
+    border:1px solid white;
+    border-radius:25px;
+}
+
+
 
 
 

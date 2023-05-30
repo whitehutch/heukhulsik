@@ -96,25 +96,26 @@
         });
     </script>
     <script>
-      $(document).ready(function() {
-      });
-    </script>
-    <script>
-        $(function($) {
-        // 로딩 페이지 보이기
-        var loadingPage = $('<div class="loading_page"><div class="loading_wrap"><img class="loading_logo" src="images/loading_logo.png" alt="Loading Logo"><div class="loading_text"><img src="images/loading_text.png" alt="Loading Logo"></div></div></div>');
-        $('body').append(loadingPage);
-        loadingPage.css("display", "static");
-        loadingPage.fadeOut(2000);
-        $("a").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        loadingPage.fadeIn(1000, redirectPage);
-        });
-        function redirectPage() {
-        window.location = linkLocation;
-        }
-        });
+        $(function ($) {
+                // 로딩 페이지 보이기
+                var loadingPage = $('<div class="loading_page"><div class="loading_wrap"><img class="loading_logo" src="images/loading_logo.png" alt="Loading Logo"><div class="loading_text"><img src="images/loading_text.png" alt="Loading Logo"></div></div></div>');
+                $('body').append(loadingPage);
+                loadingPage.css("display", "static");
+                loadingPage.fadeOut(2000);
+
+                // 특정 요소를 제외한 <a> 요소에 클릭 이벤트 바인딩
+                $("a:not(#exclude-link)").click(function (event) {
+                    event.preventDefault();
+                    var linkLocation = this.href;
+                    loadingPage.fadeIn(1000, function () {
+                        redirectPage(linkLocation);
+                    });
+                });
+
+                function redirectPage(linkLocation) {
+                    window.location.href = linkLocation;
+                }
+            });
     </script>
 
     <style>
@@ -145,7 +146,44 @@
         .loading_text { margin-top:-20px; }
         .loading_text img { width:240px; animation: rotate_image 10s linear infinite; }
 
-    </style>
+    </style> 
+    <script>
+        $(function ($) {
+            $(".footer_map .tel a").click(function (event) {
+                event.preventDefault();
+                var phoneNumber = $(this).text();
+                // 복사 로직 구현
+                copyToClipboard(phoneNumber);
+            });
+
+            function copyToClipboard(text) {
+                var tempInput = $("<input>");
+                $("body").append(tempInput);
+                tempInput.val(text).select();
+                document.execCommand("copy");
+                tempInput.remove();
+            }
+        });
+  </script>
+  <script>
+    $(function ($) {
+        $(".footer_map .adress a").click(function (event) {
+            event.preventDefault();
+            var address = "부산광역시 부산진구 서전로 37번길 18 2층";
+            // 복사 로직 구현
+            copyToClipboard(address);
+        });
+
+        // 이하 함수들은 이전에 설명한 코드와 동일합니다.
+        function copyToClipboard(text) {
+            var tempInput = $("<input>");
+            $("body").append(tempInput);
+            tempInput.val(text).select();
+            document.execCommand("copy");
+            tempInput.remove();
+        }
+    });
+    </script>
 
 </head>
 
@@ -256,8 +294,11 @@
                 <div class="footer_map">
                     <ul>
                         <li class="adress">
-                            Seojeon ro 37beon gil 18 2F<br>
-                            Busanjin gu Busan SouthKorea
+                            <a href="#" id="exclude-link">
+                                Seojeon ro 37beon gil 18 2F<br>
+                                Busanjin gu Busan SouthKorea
+                            </a>
+                            
                         </li>
                         <li class="tel">
                             <a href="#" id="exclude-link"><span>+82</span> 51 133 0361</a>
