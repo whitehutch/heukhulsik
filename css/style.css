@@ -50,9 +50,9 @@ button, button:active, button:focus {
 
 
 /* section */
-#black { width:100%; height:210px; }
-#break { width:100%; height:140px; }
-#breathe { width:100%; height:160px; }
+#black { width:100%; height:200px; }
+#break { width:100%; height:139px; }
+#breathe { width:100%; height:180px; }
 #bbb { margin:0 auto; width:1300px; height:100px; text-align:center; }
 
 html { zoom: 0.91; }
@@ -153,6 +153,7 @@ body {
 
 /* ad */
 #ad {
+    display:none;
     z-index:99999;
     position:fixed;
     width:100%;
@@ -829,18 +830,19 @@ body {
 }
 
 .intro_logo { text-align:center; }
-.intro_logo img { width:230px;  }
-.intro_h1 { margin-top:35px; text-align:center; }
-.intro_h1 img { width:250px; }
+.intro_logo img { width:250px;  }
+.intro_h1 { margin-top:50px; text-align:center; }
+.intro_h1 img { width:290px; }
 
 .intro p {
-    margin-top:30px;
+    margin-top:35px;
     color:rgba(255,255,255,1);
+    font-size:1vw;
     text-align:center;
     line-height:25px;
 }
-.intro p:first-of-type { margin-top:40px; }
-.intro p:last-of-type { padding-bottom:80px; }
+.intro p:first-of-type { margin-top:50px; }
+.intro p:last-of-type { padding-bottom:90px; }
 
 
 
@@ -972,19 +974,19 @@ body {
 /* menu intro */
 .m_intro {
     margin:140px auto 0;
-    width:450px;
-    height:450px;
+    width:500px;
+    height:500px;
     border:2px solid white;
     border-radius:500px;
     text-align:center;
 }
 
-.m_wrap { margin-top:113.75px; }
+.m_wrap { margin-top:145px; }
 
 .m_wrap h1 {
     margin-bottom:30px;
     color:rgba(255, 255, 255, 1);
-    font-size:30px;
+    font-size:35px;
     line-height:30px;
     font-weight:800;
     letter-spacing:1.5px;
@@ -993,7 +995,7 @@ body {
 
 .m_wrap p {
     color:rgba(255, 255, 255, 1);
-    font-size:15px;
+    font-size:1vw;
     line-height:22.5px;
     margin-bottom:20px;
 }
@@ -1263,7 +1265,7 @@ body {
 #bbb .v_line {
     margin:0 auto;
     width:0;
-    height:140px;
+    height:130px;
     border-left:2px solid white;
 }
 
