@@ -66,100 +66,6 @@ body {
 
 
 
-/* map */
-#map {
-    z-index:999999;
-    position: fixed;
-    display: none;
-    top: 140px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%; 
-    transition: opacity 1s ease-in-out;
-
-    -webkit-box-align: center; 
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; /* 수직 정렬 */
-
-    -webkit-box-pack: center;
-    -moz-box-pack: center; 
-    -ms-flex-pack: center; 
-    justify-content: center; /* 수평 정렬 */
-
-    background:rgba(0,0,0,0.7);
-}
-.map_flex {
-    box-sizing:border-box;
-    margin-top:-140px;
-    width:725px;
-    height:550px;
-    color:white;
-    background-color:black;
-    border-radius:25px;
-}
-
-.map_wrap {
-    position:relative;
-    margin:0 auto;
-    margin-top:30px;
-    width:675px;
-    height:475px;
-}
-
-.map_close {
-    position:static;
-    float:right;
-    margin-top:10px;
-    margin-right:10px;
-    font-size:30px;
-    font-weight:200;
-    line-height:0;
-    cursor:pointer;
-}
-
-.map_tt {
-    position:absolute;
-    right:0;
-    bottom:0;
-    width:175px;
-}
-
-.map_tt p {
-    margin-bottom:10px;
-    font-size:15px;
-    font-weight:400;
-    line-height:20px;
-}
-
-.map_tt p:first-child span {
-    display:inline-block;
-    font-weight:700;
-    margin-bottom:10px;
-    text-decoration:underline;
-}
-
-.map_tt p:nth-child(2) {
-    color:#999;
-    margin-bottom:0;
-}
-
-.map_tt p:nth-child(2) span {
-    display:inline-block;
-    margin-top:10px;
-    line-height:20px;
-}
-
-.map_im { position:absolute; left:20px; bottom:0; }
-.map_im img { width:450px; vertical-align:bottom; }
-
-
-
-
-
 /* ad */
 #ad {
     display:none;
@@ -277,6 +183,100 @@ body {
     height:90px;
     overflow:hidden;
 }
+
+
+
+
+
+/* map */
+#map {
+    z-index:999999;
+    position: fixed;
+    display: none;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%; 
+    transition: opacity 1s ease-in-out;
+
+    -webkit-box-align: center; 
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; /* 수직 정렬 */
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center; 
+    -ms-flex-pack: center; 
+    justify-content: center; /* 수평 정렬 */
+
+    background:rgba(0,0,0,0.7);
+}
+.map_flex {
+    box-sizing:border-box;
+    margin-top:-140px;
+    width:725px;
+    height:550px;
+    color:white;
+    background-color:black;
+    border-radius:25px;
+}
+
+.map_wrap {
+    position:relative;
+    margin:0 auto;
+    margin-top:30px;
+    width:675px;
+    height:475px;
+}
+
+.map_close {
+    position:static;
+    float:right;
+    margin-top:10px;
+    margin-right:10px;
+    font-size:30px;
+    font-weight:200;
+    line-height:0;
+    cursor:pointer;
+}
+
+.map_tt {
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:175px;
+}
+
+.map_tt p {
+    margin-bottom:10px;
+    font-size:15px;
+    font-weight:400;
+    line-height:20px;
+}
+
+.map_tt p:first-child span {
+    display:inline-block;
+    font-weight:700;
+    margin-bottom:10px;
+    text-decoration:underline;
+}
+
+.map_tt p:nth-child(2) {
+    color:#999;
+    margin-bottom:0;
+}
+
+.map_tt p:nth-child(2) span {
+    display:inline-block;
+    margin-top:10px;
+    line-height:20px;
+}
+
+.map_im { position:absolute; left:20px; bottom:0; }
+.map_im img { width:450px; vertical-align:bottom; }
 
 
 
