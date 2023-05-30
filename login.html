@@ -111,7 +111,7 @@
         
         // 페이지 로드 후 로딩 페이지 숨기기
         $(window).on('load', function() {
-          loadingPage.delay(1000).fadeOut(2000, function() {
+          loadingPage.fadeOut(2000, function() {
             $(this).remove();
           });
         });
