@@ -190,7 +190,7 @@ body {
 /* map */
 #map {
     z-index:999;
-    position: fixed;
+    position: absolute;
     display: none;
     margin-top:140px;
     top: 0;
