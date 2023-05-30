@@ -158,10 +158,12 @@ body {
 #header {
     z-index:99999;
     position: fixed;
+    top:0;
     width:100%;
     height:100px;
     padding:20px 0px;
     background-color:rgba(0, 0, 0, 1);
+    border-bottom:1px solid white;
 }
 
 .header_wrap {
@@ -221,6 +223,7 @@ body {
     height:550px;
     color:white;
     background-color:black;
+    border:1px solid white;
     border-radius:25px;
 }
 
@@ -430,7 +433,8 @@ body {
     position:relative;
     margin-top:50px;
     width:100%;
-    height:1300px;
+    height:100%;
+    padding-bottom:500px;
 }
 
 .box1 {
@@ -1412,9 +1416,166 @@ body {
 
 
 
+/* log in out */
+#register {
+    position:relative;
+    text-align:center;
+    width:100%;
+    padding-top:200px;
+    background-color:black;
+}
+
+#register img {
+    width:180px;
+}
+
+#register h1 {
+    margin:25px 0 30px;
+    color:white;
+    font-family:'SUIT';
+    font-size:30px;
+    font-weight:800;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.reg_wrap {
+    box-sizing:border-box;
+    margin:0 auto;
+    width:350px;
+    padding-top:100px;
+    color:white;
+    background-color:black;
+    text-align:center;
+    border:2px solid white;
+    border-radius:450px 450px 0px 0px ;
+}
+
+.reg_wrap input:focus {
+    outline: none;
+}
+
+.reg_wrap input {
+    display:block;
+    margin:0 auto;
+    width:150px;
+    box-sizing:border-box;
+    padding:10px 20px;
+    font-family:'SUIT';
+    color:white;
+    font-size:15px;
+    border-radius:50px;
+    background-color:black;
+}
+
+.reg_wrap .id {
+    padding-top:10px;
+    border:1px solid white;
+    border-radius:25px 25px 0px 0px;
+}
+
+.reg_wrap .password {
+    border:1px solid white;
+    border-top:0;
+    border-radius:0px 0px 25px 25px;
+}
+
+.reg_wrap input::placeholder {
+    color:white;
+}
+
+.reg_wrap .password::placeholder {
+    margin-top:-5px;
+}
+
+.reg_wrap label input[type="checkbox"] {
+    all:unset;
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border:1px solid white;
+    border-radius:15px 15px 15px 15px !important;
+    margin:10px 10px 0px 0px;
+    transition:0.5s;
+}
+
+.reg_wrap label input:checked {
+    background-color:white;
+}
+
+.login_button {
+    position:relative;
+    margin:15px auto 0;
+    width:100px;
+}
+
+.login_button .clone {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100px;
+    height:40px;
+    color:black;
+    text-transform:lowercase;
+    border:1px solid black;
+    background-color:white;
+    clip-path: circle(0% at 50% 50%);
+    transition:0.8s;
+}
+
+.login_button .login {
+    padding:0;
+    width:100px;
+    height:40px;
+    cursor:pointer;
+    text-transform:lowercase;
+    border:1px solid white;
+}
+
+.login_button:hover .clone {
+    cursor:pointer;
+    clip-path: circle(100% at 50% 50%);
+    transition:1s;
+}
+
+#register hr {
+    margin:25px auto 25px;
+    width:10px;
+}
+
+.reg_tool {
+    padding-bottom:50px;
+    font-size:15px;
+}
+
+.reg_tool a { font-weight:600; }
+
+.reg_tool h2 {
+    color:white;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-size:20px;
+}
+
+.reg_tool ul { list-style:none; }
+.reg_tool li { display:inline-block; margin-right:5px; }
+.reg_tool li::after {
+    content:"·";
+    color:white;
+    margin-left:7px;
+}
+.reg_tool li:last-child { margin-right:0; }
+.reg_tool li:last-child::after { content:""; margin-left:0; }
+
+
+
+
 
 /* footer */
-#footer { 
+#footer {
+    position:absolute;
+    bottom:0;
     width:100%;
     height:500px;
     border-top:1px solid white;
