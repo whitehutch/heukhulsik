@@ -189,8 +189,8 @@ body {
 
 /* map */
 #map {
-    z-index:9999;
-    position: fixed;
+    z-index:999;
+    position: absolute;
     display: none;
     margin-top:140px;
     top: 0;
