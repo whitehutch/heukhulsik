@@ -71,7 +71,7 @@ body {
     z-index:999999;
     position: fixed;
     display: none;
-    top: 0;
+    top: 140px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -94,6 +94,7 @@ body {
 }
 .map_flex {
     box-sizing:border-box;
+    margin-top:-140px;
     width:725px;
     height:550px;
     color:white;
