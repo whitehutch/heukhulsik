@@ -105,18 +105,30 @@
     </script>
     <script>
       $(document).ready(function() {
-        // 로딩 페이지 보이기
-        var loadingPage = $('<div class="loading_page"><div class="loading_wrap"><img class="loading_logo" src="images/loading_logo.png" alt="Loading Logo"><div class="loading_text"><img src="images/loading_text.png" alt="Loading Logo"></div></div></div>');
-        $('body').append(loadingPage);
-        
-        // 페이지 로드 후 로딩 페이지 숨기기
-        $(window).on('load', function() {
-          loadingPage.fadeOut(2000, function() {
-            $(this).remove();
-          });
-        });
       });
     </script>
+    <script>
+        $(function ($) {
+                // 로딩 페이지 보이기
+                var loadingPage = $('<div class="loading_page"><div class="loading_wrap"><img class="loading_logo" src="images/loading_logo.png" alt="Loading Logo"><div class="loading_text"><img src="images/loading_text.png" alt="Loading Logo"></div></div></div>');
+                $('body').append(loadingPage);
+                loadingPage.css("display", "static");
+                loadingPage.fadeOut(2000);
+
+                // 특정 요소를 제외한 <a> 요소에 클릭 이벤트 바인딩
+                $("a:not(#exclude-link)").click(function (event) {
+                    event.preventDefault();
+                    var linkLocation = this.href;
+                    loadingPage.fadeIn(1000, function () {
+                        redirectPage(linkLocation);
+                    });
+                });
+
+                function redirectPage(linkLocation) {
+                    window.location.href = linkLocation;
+                }
+            });
+        </script>
 
     <style>
 
@@ -174,17 +186,16 @@
                 <div class="tool">
                     <div class="tool_wrap">
                         <a href="login.html">login</a>
-                        <a class="map" href="#">map</a>
-                        <a href="#">en · kr</a>
-                        <a href="#"><img src="images/search.png" alt=""></a>
+                        <a id="exclude-link" class="map" href="#">map</a>
+                        <a id="exclude-link" href="#">en · kr</a>
                     </div>
                 </div>
                 <div class="category">
                     <div class="cate_wrap">
-                        <a href="#black" id="notice">notice<span></span></a>
-                        <a href="#break" id="about">about<span></span></a>
-                        <a href="#breathe" id="menu">menu<span></span></a>
-                        <a href="#bbb" id="exhibition">exhibition<span></span></a>
+                        <a href="#black" id="exclude-link">notice<span></span></a>
+                        <a href="#break" id="exclude-link">about<span></span></a>
+                        <a href="#breathe" id="exclude-link">menu<span></span></a>
+                        <a href="#bbb" id="exclude-link">exhibition<span></span></a>
                         <a href="#">online shop<span></span></a>
                     </div>
                 </div>
@@ -198,7 +209,7 @@
     <div id="map">
         <div class="map_flex">
             <div class="map_wrap">
-                <a href="#map" class="map_close">×</a>
+                <a href="#map" class="map_close" id="exclude-link">×</a>
                 <div class="map_tt">
                     <p>
                         <span>오시는 길</span><br>
@@ -755,11 +766,11 @@
                             Busanjin gu Busan SouthKorea
                         </li>
                         <li class="tel">
-                            <a href="#"><span>+82</span> 51 133 0361</a>
-                            <a href="#"><span>+82</span> 10 6312 7369</a>
+                            <a href="#" id="exclude-link"><span>+82</span> 51 133 0361</a>
+                            <a href="#" id="exclude-link"><span>+82</span> 10 6312 7369</a>
                         </li>
                         <li class="mail">
-                            <a href="#">black.bb @ gmail.com</a>
+                            <a href="#" id="exclude-link">black.bb @ gmail.com</a>
                         </li>
                         <li class="schedule">
                             <span>online</span>&nbsp;&nbsp; mon - fri, 10:00 - 18:00<br>
