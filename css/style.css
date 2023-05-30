@@ -55,7 +55,7 @@ button, button:active, button:focus {
 #breathe { width:100%; height:160px; }
 #bbb { margin:0 auto; width:1300px; height:100px; text-align:center; }
 
-
+html { zoom: 0.8; }
 
 body {
     zoom:0.8;
