@@ -121,13 +121,13 @@
                 var loadingPage = $('<div class="loading_page"><div class="loading_wrap"><img class="loading_logo" src="images/loading_logo.png" alt="Loading Logo"><div class="loading_text"><img src="images/loading_text.png" alt="Loading Logo"></div></div></div>');
                 $('body').append(loadingPage);
                 loadingPage.css("display", "static");
-                loadingPage.fadeOut(2000);
+                loadingPage.delay(2000).fadeOut(1000);
 
                 // 특정 요소를 제외한 <a> 요소에 클릭 이벤트 바인딩
                 $("a:not(#exclude-link)").click(function (event) {
                     event.preventDefault();
                     var linkLocation = this.href;
-                    loadingPage.fadeIn(1000, function () {
+                    loadingPage.fadeIn(2000, function () {
                         redirectPage(linkLocation);
                     });
                 });
@@ -156,7 +156,7 @@
         }
         
         .loading_wrap {
-            margin-top:50px;
+            margin-top:25px;
             display: flex;
             flex-direction: column;
             align-items: center;
