@@ -35,6 +35,13 @@
     </script>
     <script>
         $(document).ready(function () {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                window.location.href = "mobile.html";
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
                 let roller = document.querySelector('.roller');
                 roller.id = 'roller1';
                 let clone = roller.cloneNode(true);
