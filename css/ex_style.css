@@ -693,13 +693,14 @@ li {
     clear:both;
     padding-top:100px;
     padding-bottom:20px;
-    font-size:30px;
+    font-size:35px;
     text-align:center;
+    letter-spacing:1px;
 }
 
 .inner_txt {
     color:#ccc;
-    font-size:15px;
+    font-size:17.5px;
     line-height:25px;
     text-align:center;
 }
