@@ -107,7 +107,6 @@ body {
 
 /* ad */
 #ad {
-    display:block;
     box-sizing:border-box;
     z-index:999999;
     position:fixed;
