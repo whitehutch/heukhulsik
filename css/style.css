@@ -107,12 +107,10 @@ body {
 
 /* ad */
 #ad {
-    box-sizing:border-box;
     z-index:999999;
     position:fixed;
     width:100%;
     top:0px;
-    height:30px;
     background-color:black;
     border-bottom:1px solid #999;
 }
